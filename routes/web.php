@@ -29,4 +29,4 @@ Route::get("edit/{id}","ReviewController@edit");
 Route::patch("update/{id}","ReviewController@update");
 
 //delete review
-Route::get("remove","ReviewController@delete");
+Route::get("remove/{id}","ReviewController@remove");

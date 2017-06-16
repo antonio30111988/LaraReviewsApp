@@ -21,10 +21,10 @@
 		 <h3>
 		 Title : <a href="/task/{{ $task->id }}">{{ $task->title }}</a>
 		 &sdot;&sdot;&sdot;&sdot;&sdot;
-		Title : <a href="{{ action('TaskController@show', [$task->id]) }}">{{
+	{{---	Title : <a href="{{ action('ReviewController@show', [$task->id]) }}">{{
 		$task->title }}</a>
 		 &sdot;&sdot;&sdot;&sdot;&sdot;
-		 Title : <a href="{{ url('/task', $task->id) }}">{{ $task->title }}</a>
+		 Title : <a href="{{ url('/task', $task->id) }}">{{ $task->title }}</a> --}}
 		 </h3>
 		<a href="{{ url('/remove', $task->id) }}">Remove</a>
 	 @endforeach
