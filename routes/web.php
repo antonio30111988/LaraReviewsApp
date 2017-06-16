@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Reviewsl list and single review display
+Route::get("review","ReviewController@index");
+Route::get("task/{id}","ReviewController@show");
+
+//create new review
+Route::get("create","ReviewController@create");
+Route::post("create/task","ReviewController@store");
+
+//edit and update review
+Route::get("editreview","ReviewController@editreview");
+Route::get("edit/{id}","ReviewController@edit");
+Route::patch("update/{id}","ReviewController@update");
+
+//delete review
+Route::get("remove","ReviewController@delete");

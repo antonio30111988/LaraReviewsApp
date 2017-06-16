@@ -21,7 +21,7 @@ class ReviewController extends Controller
 	* @param Review object
 	* 
 	*/
-    public function __construct(Request $resquests,Review $reviews){
+    public function __construct(Request $requests,Review $reviews){
     	$this->reviews=$reviews;
     	$this->requests=$requests;
     } 
